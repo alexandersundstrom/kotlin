@@ -37,7 +37,7 @@ var mutable: String = """This is some text
 //String concatenation
 val accessVariable = "The value is ${value}"
 
-fun add(a: Int = 10, b: Int = 5): Int {
+fun addition(a: Int = 10, b: Int = 5): Int {
     println("I was called")
     return a + b
 }
@@ -48,5 +48,5 @@ data class Person(var firstname: String, var lastname: String)
 var maybeSet: String? = null
 
 //by lazy, only called once when set
-val sum: Int by lazy { add() }
+val sum: Int by lazy { addition() }
 
